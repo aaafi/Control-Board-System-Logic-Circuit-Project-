@@ -1,0 +1,65 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+option                                                                            0x0260       2
+clc                                                                               0x0262       2
+D1                                                                                0x0264       2
+D2                                                                                0x0266       2
+list                                                                              0x0268       2
+i                                                                                 0x026A       2
+login_step                                                                        0x026C       2
+register_step                                                                     0x026E       2
+keypad                                                                            0x0270      16
+key                                                                               0x0280       1
+temp_username                                                                     0x0281      10
+temp_password                                                                     0x028B       5
+users                                                                             0x0290      75
+user_count                                                                        0x02DB       2
+_base_y                                                                           0x02DD       4
+_lcd_x                                                                            0x02E1       1
+_lcd_y                                                                            0x02E2       1
+_lcd_maxx                                                                         0x02E3       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+keypad_touch                                                                      R4,R5        2
+counter                                                                           R6,R7        2
+t1                                                                                R8,R9        2
+t2                                                                                R10,R11      2
+menu                                                                              R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+ext_int0_isr                                                                      0x000F1      7
+ext_int1_isr                                                                      0x000F8     10
+ext_int2_isr                                                                      0x00102     15
+timer0_comp_isr                                                                   0x00111     15
+register_user                                                                     0x00120     45
+register_password                                                                 0x0014D     68
+login_user                                                                        0x00191     45
+login_password                                                                    0x001BE    138
+seg_counter                                                                       0x00248     22
+bounce1                                                                           0x0025E     36
+bounce2                                                                           0x00282     46
+start_menu                                                                        0x002B0     72
+handle_options                                                                    0x002F8     46
+handle_list                                                                       0x00326     84
+handle_menu                                                                       0x0037A     97
+main                                                                              0x003DB     34
+_lcd_write_nibble_G100                                                            0x003FD     20
+_lcd_write_data                                                                   0x00411     12
+lcd_gotoxy                                                                        0x0041D     17
+lcd_clear                                                                         0x0042E     14
+lcd_putchar                                                                       0x0043C     32
+lcd_puts                                                                          0x0045C     15
+lcd_putsf                                                                         0x0046B     19
+lcd_init                                                                          0x0047E     47
+memset                                                                            0x004AD     16
+strcmp                                                                            0x004BD     20
+strcpy                                                                            0x004D1     13
